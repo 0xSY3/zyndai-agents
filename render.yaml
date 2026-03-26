@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: zyndai-agents
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: ZYND_API_KEY
+        sync: false
+      - key: APIFY_API_TOKEN
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: RENDER_EXTERNAL_URL
+        generateValue: false

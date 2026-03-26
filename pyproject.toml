@@ -1,0 +1,15 @@
+[project]
+name = "zyndai-agents"
+version = "0.1.0"
+description = "ZyndAI agent fleet — Lead Enrichment, Competitor Intel, Content Pipeline, Reputation Monitor, Orchestrator"
+requires-python = ">=3.12"
+dependencies = [
+    "zyndai-agent>=0.2.4",
+    "apify-client>=1.8.0",
+    "langchain>=0.3.0",
+    "langchain-openai>=0.3.0",
+    "langchain-community>=0.3.0",
+    "langchain-classic>=0.0.1",
+    "python-dotenv>=1.0.0",
+    "pydantic>=2.0.0",
+]
